@@ -176,6 +176,16 @@ type Liquidate @entity(immutable: true) {
   transactionHash: Bytes!
 }
 
+type Market @entity {
+  id: ID!
+  supplyAPY: BigDecimal!
+  borrowAPY: BigDecimal!
+  maxROE: BigDecimal!
+  maxMultiplier: BigDecimal!
+  availableLiquidity: BigDecimal!
+}
+
+
 type PullDebt @entity(immutable: true) {
   id: Bytes!
   from: Bytes! # address
