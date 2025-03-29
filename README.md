@@ -10,6 +10,7 @@ This subgraph helps verify that pool metrics shown on the [Euler Finance fronten
    const STATIC_REWARD_SUPPLY_APR = BigDecimal.fromString("0.0365") // 3.65%
    const STATIC_REWARD_BORROW_APR = BigDecimal.fromString("0.0032") // 0.32%
    ```
+This is setup this way because I wanted to make everything work with just subgraph but it does not allow real-time API updates. For automated updates, we can perhaps add script to fetch from Merkl API and auto-deploy to subgraph.
 
 2. **Set Collateral Address**  
    Make sure the correct collateral address is used:
