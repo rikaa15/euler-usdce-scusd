@@ -45,6 +45,18 @@ This subgraph helps verify that pool metrics shown on the [Euler Finance fronten
      }
    }
    ```
+## Example (USDC.e/scUSD)
+Subgraph [here](https://thegraph.com/explorer/subgraphs/6v4FYePDBWG5rWEd4KFpVWKAeKA7fPSLdSCQA6FrqWj9?view=Query&chain=arbitrum-one).
+### Euler Frontend vs Subgraph Comparison
+
+| Metric              | Euler Frontend         | Subgraph Output        |
+|---------------------|------------------------|------------------------|
+| Available Liquidity | $1.70M                 | $1.697M                |
+| Supply APY          | 8.27%                  | 10.07%                 |
+| Borrow APY          | 8.03%                  | 7.15%                  |
+| Max ROE             | 10.55%                 | 41.44%                 |
+| Max Multiplier      | 10.51x                 | 11.76x                 |
+| LLTV                | 91.50%                 | 91.50%                 |
 
 ---
 
