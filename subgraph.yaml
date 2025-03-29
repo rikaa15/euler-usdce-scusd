@@ -7,7 +7,7 @@ dataSources:
     name: EVault
     network: sonic
     source:
-      address: "0x196F3C7443E940911EE2Bb88e019Fd71400349D9" #Beacon Proxy
+      address: "0x196F3C7443E940911EE2Bb88e019Fd71400349D9"
       abi: EVault
       startBlock: 16000000
     mapping:
@@ -23,3 +23,24 @@ dataSources:
       eventHandlers:
         - event: VaultStatus(uint256,uint256,uint256,uint256,uint256,uint256,uint256)
           handler: handleVaultStatus
+
+  # - kind: ethereum
+  #   name: MerklDistributor
+  #   network: sonic
+  #   source:
+  #     address: "0xdd8072bb7bbc3cdF770D715C28580d68680c72A8"
+  #     abi: MerklDistributor
+  #     startBlock: 7902052 # replace with accurate block when rewards started
+  #   mapping:
+  #     kind: ethereum/events
+  #     apiVersion: 0.0.9
+  #     language: wasm/assemblyscript
+  #     file: ./src/merkl.ts
+  #     entities:
+  #       - RewardEvent
+  #     abis:
+  #       - name: MerklDistributor
+  #         file: ./abis/MerklDistributor.json
+  #     eventHandlers:
+  #       - event: RewardDistributed(indexed address,indexed address,indexed address,uint256)
+  #         handler: handleRewardDistributed

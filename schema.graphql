@@ -183,6 +183,9 @@ type Market @entity {
   maxROE: BigDecimal!
   maxMultiplier: BigDecimal!
   availableLiquidity: BigDecimal!
+  rewardAPR7d: BigDecimal!
+  borrowLTV: BigDecimal!
+  liquidationLTV: BigDecimal!
 }
 
 
